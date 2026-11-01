@@ -1,0 +1,130 @@
+{
+  "roles": [
+    { "id": 1, "name": "admin", "title": "Администратор" },
+    { "id": 2, "name": "client", "title": "Клиент" }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Администратор",
+      "email": "admin@aurasalon.ru",
+      "password": "admin123",
+      "roleId": 1,
+      "discountCoupon": null
+    },
+    {
+      "id": 2,
+      "name": "Анна Смирнова",
+      "email": "anna@example.com",
+      "password": "client123",
+      "roleId": 2,
+      "discountCoupon": { "code": "ANNA15", "discountPercent": 15 }
+    }
+  ],
+  "categories": [
+    { "id": "haircuts", "name": "Стрижки" },
+    { "id": "color", "name": "Окрашивание" },
+    { "id": "care", "name": "Уход за волосами" },
+    { "id": "nails", "name": "Маникюр" }
+  ],
+  "services": [
+    {
+      "id": "women-haircut",
+      "name": "Женская стрижка",
+      "description": "Форма и укладка с учётом структуры волос и пожеланий.",
+      "duration": 60,
+      "price": 2500,
+      "categoryId": "haircuts",
+      "discountPercent": 30,
+      "image": "✂️",
+      "tone": "clay",
+      "label": "−30%"
+    },
+    {
+      "id": "men-haircut",
+      "name": "Мужская стрижка",
+      "description": "Аккуратная стрижка и укладка, подобранные под ваш стиль.",
+      "duration": 45,
+      "price": 1600,
+      "categoryId": "haircuts",
+      "discountPercent": 0,
+      "image": "✂️",
+      "tone": "sage",
+      "label": ""
+    },
+    {
+      "id": "styling",
+      "name": "Укладка",
+      "description": "Лёгкая повседневная или вечерняя укладка.",
+      "duration": 45,
+      "price": 1900,
+      "categoryId": "haircuts",
+      "discountPercent": 0,
+      "image": "〰️",
+      "tone": "rose",
+      "label": ""
+    },
+    {
+      "id": "coloring",
+      "name": "Окрашивание в один тон",
+      "description": "Равномерный оттенок и бережный уход после процедуры.",
+      "duration": 150,
+      "price": 6500,
+      "categoryId": "color",
+      "discountPercent": 30,
+      "image": "🎨",
+      "tone": "blue",
+      "label": "−30%"
+    },
+    {
+      "id": "toning",
+      "name": "Тонирование волос",
+      "description": "Обновление оттенка с мягким блеском и естественным результатом.",
+      "duration": 90,
+      "price": 4000,
+      "categoryId": "color",
+      "discountPercent": 0,
+      "image": "🪞",
+      "tone": "sand",
+      "label": ""
+    },
+    {
+      "id": "hair-care",
+      "name": "Восстанавливающий уход",
+      "description": "Питательная процедура для мягкости и гладкости волос.",
+      "duration": 60,
+      "price": 3500,
+      "categoryId": "care",
+      "discountPercent": 0,
+      "image": "🌿",
+      "tone": "olive",
+      "label": ""
+    },
+    {
+      "id": "manicure",
+      "name": "Маникюр с покрытием",
+      "description": "Комбинированный маникюр и стойкое покрытие выбранного оттенка.",
+      "duration": 90,
+      "price": 2600,
+      "categoryId": "nails",
+      "discountPercent": 30,
+      "image": "💅",
+      "tone": "rose",
+      "label": "−30%"
+    },
+    {
+      "id": "nail-care",
+      "name": "Уход для ногтей",
+      "description": "Бережный маникюр без покрытия и укрепляющий уход.",
+      "duration": 50,
+      "price": 1700,
+      "categoryId": "nails",
+      "discountPercent": 0,
+      "image": "✨",
+      "tone": "clay",
+      "label": ""
+    }
+  ],
+  "appointments": [],
+  "payments": []
+}
